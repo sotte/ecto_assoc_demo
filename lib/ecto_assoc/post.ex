@@ -4,5 +4,6 @@ defmodule EctoAssoc.Post do
   schema "posts" do
     field :header, :string
     field :body, :string
+    belongs_to :user, EctoAssoc.User
   end
 end
