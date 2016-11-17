@@ -3,5 +3,6 @@ defmodule EctoAssoc.Tag do
 
   schema "tags" do
     field :name, :string
+    many_to_many :posts, EctoAssoc.Post, join_through: EctoAssoc.TagPostAssociation
   end
 end
