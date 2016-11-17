@@ -4,5 +4,6 @@ defmodule EctoAssoc.User do
   schema "users" do
     field :name, :string
     field :email, :string
+    has_one :avatar, EctoAssoc.Avatar
   end
 end
